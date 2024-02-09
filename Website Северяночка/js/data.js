@@ -58,7 +58,7 @@ const products = [
     isDiscounted: false,
     isNew: false,
     isRecentlybought: true,
-    imgAdress: "/images/kolbasa.jpg",
+    imgAdress: "/images/vetchina.jpg",
     originalPrice: "77,99 ₽",
     info: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
     rating: 2,
