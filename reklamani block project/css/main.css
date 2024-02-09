@@ -1,0 +1,27 @@
+.vidcontainer {
+  position: relative;
+}
+#adskip {
+  /* border: 1px solid white; */
+  position: absolute;
+  bottom: 10%;
+  right: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skipbtn {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+#timer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
