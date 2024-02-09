@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --main-color: #fff;
+  --secondary-color: #70c05b;
+  --onsurface-color: #414141;
+  --primary-color-muted: #fcd5ba;
+  --background-color: #fbf8ec;
+  --primary-color: #ff6633;
+  --graysale: #bfbfbf;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 72px;
+}
+.header {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4px;
+}
+
+.logo {
+  width: 152px;
+  height: 32px;
+}
+.katalog {
+  width: 140px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.katalog img {
+  color: var(--main-color);
+}
+.katalog a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  position: relative;
+}
+.search-container input {
+  padding: 10px 10px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  font-weight: 400;
+}
+.search-container img {
+  top: 10;
+  right: 10px;
+  position: absolute;
+}
+.menu__components {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.hero {
+  height: 200px;
+  background-image: url(/images/header-bg.svg);
+  background-size: cover;
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 68px;
+  padding-right: 68px;
+}
+.hero__wrapper img {
+  max-width: 322px;
+}
+.hero__wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0em;
+
+  font-weight: 700;
+  color: var(--onsurface-color);
+}
+
+.sales {
+  padding-top: 80px;
+  background-color: var(--background-color);
+}
+.discounts {
+  margin-bottom: 120px;
+}
+
+.saletype {
+  height: 54px;
+  margin-bottom: 40px;
+}
+
+.saletype__wrapper {
+  justify-content: space-between;
+}
+.saletype__wrapper h2 {
+  color: var(--onsurface-color);
+}
+.saletype__wrapper div {
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+p {
+  color: var(--onsurface-color);
+}
+.products {
+  justify-content: space-between;
+}
+.card {
+  max-height: 350px;
+  background-color: var(--main-color);
+  width: 272px;
+  position: relative;
+  border-radius: 4px;
+}
+.item__img {
+  height: 160px;
+  margin-bottom: 8px;
+}
+
+.like__btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.discount__amount {
+  position: absolute;
+  top: 34%;
+  left: 4%;
+  width: 56px;
+  height: 32px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--main-color);
+}
+
+.prices {
+  justify-content: space-between;
+  /* width: 256px; */
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+
+.prices div h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.prices div p {
+  color: var(--graysale);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.prices div h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.item__info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin: 0 8px;
+  margin-bottom: 8px;
+}
+
+.stars {
+  margin: 0 8px;
+  margin-bottom: 8px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.addto__card {
+  width: 256px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin: 0 8px;
+  margin-bottom: 8px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.addto__card:hover {
+  background-color: var(--primary-color);
+}
+.news {
+  margin-bottom: 120px;
+}
+.recently__bought {
+  margin-bottom: 120px;
+}
