@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="flex flex-col items-center gap-4 mt-5" id="bookForm">
+      <input
+        type="text"
+        class="border border-1 border-slate-900 p-3 w-1/2 rounded-lg"
+        placeholder="Book name"
+      />
+      <input
+        type="text"
+        class="border border-1 border-slate-900 p-3 w-1/2 rounded-lg"
+        placeholder="Author"
+      />
+      <input
+        type="text"
+        class="border border-1 border-slate-900 p-3 w-1/2 rounded-lg"
+        placeholder="Image url"
+      />
+      <textarea
+        name=""
+        id=""
+        class="border border-1 border-slate-900 p-3 w-1/2 rounded-lg"
+        placeholder="Description"
+      ></textarea>
+      <button
+        class="p-3 border border-1 rounded-lg border-slate-700 w-1/2 hover:bg-black hover:text-white transition-all"
+      >
+        Add book
+      </button>
+    </form>
+
+    <div
+      class="md:container mx-auto my-10 flex gap-4 flex-wrap"
+      id="bookList"
+    ></div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
